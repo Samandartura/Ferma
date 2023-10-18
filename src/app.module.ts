@@ -13,6 +13,9 @@ import { VacancyHistoryModule } from './vacancy_history/vacancy_history.module';
 import { MeatProductionModule } from './meat_production/meat_production.module';
 import { FiberProductionModule } from './fiber_production/fiber_production.module';
 import { MilkProductionModule } from './milk_production/milk_production.module';
+import { FeddingModule } from './fedding/fedding.module';
+import { RecordOfFeddingModule } from './record_of_fedding/record_of_fedding.module';
+import { InfoModule } from './info/info.module';
 
 @Module({
   imports: [ConfigModule.forRoot({envFilePath:'.env',isGlobal:true}),
@@ -28,6 +31,9 @@ import { MilkProductionModule } from './milk_production/milk_production.module';
     MeatProductionModule,
     FiberProductionModule,
     MilkProductionModule,
+    FeddingModule,
+    RecordOfFeddingModule,
+    InfoModule,
   ],
   
   controllers: [],
